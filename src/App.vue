@@ -2,6 +2,62 @@
   <div id="app">
     <Header id="header"></Header>
     <main id="main">
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
       <router-view/>   
     </main>
     <Footer id="footer"></Footer>
@@ -25,45 +81,12 @@ export default {
 </script>
 
 <style lang="less">
-#app {
-  display: grid;
-  grid-template-columns: 12% auto 12%;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header header"
-                       ".      main  ."
-                       "footer footer footer";
-
-  #header {
-    
-    grid-area: header;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-
-  #main {
-    grid-area: main;
-  }
-
-  #footer {
-    grid-area: footer;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-
+@import url(./assets/reset.less);
+#app{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
-
-@media (max-width: 768px) {
-  #app {
-    grid-template-columns: 10px auto 10px;
-
-    #header, #footer {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-}
-
-
-
 </style>
