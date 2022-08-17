@@ -2433,9 +2433,9 @@
   "version" "1.4.222"
 
 "element-ui@^2.3.9":
-  "integrity" "sha512-dx45nQLt4Hn87/Z9eRr3ex6KFZbxlFAwEU3QoW3wA5EsYftvHTyL9Pq7VnXXD7hu1Eiaup2jcs6kp+/VSFmXuA=="
-  "resolved" "https://registry.npmmirror.com/element-ui/-/element-ui-2.15.9.tgz"
-  "version" "2.15.9"
+  "integrity" "sha512-SCYrfWjRFJDfGUV2ksFnPimdeCM47PHLjXvwQtq7S6guw9IgKUhN85hkCq1I5/5vHHNuMM4VB/NzA8yQcyc6jg=="
+  "resolved" "https://registry.npmmirror.com/element-ui/-/element-ui-2.3.9.tgz"
+  "version" "2.3.9"
   dependencies:
     "async-validator" "~1.8.1"
     "babel-helper-vue-jsx-merge-props" "^2.0.0"
@@ -7287,7 +7287,7 @@
   "resolved" "https://registry.npmmirror.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^2.5.17", "vue@^2.5.2":
+"vue@^2.5.2":
   "integrity" "sha512-ncwlZx5qOcn754bCu5/tS/IWPhXHopfit79cx+uIlLMyt3vCMGcXai5yCG5y+I6cDmEj4ukRYyZail9FTQh7lQ=="
   "resolved" "https://registry.npmmirror.com/vue/-/vue-2.7.8.tgz"
   "version" "2.7.8"
