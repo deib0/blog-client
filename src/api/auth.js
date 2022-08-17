@@ -13,7 +13,7 @@ export default {
   },
 
   login({ username, password }) {
-    return request(URL.LOGIN, 'POST', { usernafme, password })
+    return request(URL.LOGIN, 'POST', { username, password })
   },
 
   logout() {
@@ -25,3 +25,10 @@ export default {
     return request(URL.GET_INFO)
   }
 }
+
+// 测试代码
+auth.login({ username: 'hunger', password: '123456' })
+.then(res => {
+    console.log(res)
+    this.username = res.data.username
+})

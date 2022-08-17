@@ -8,6 +8,9 @@
 <script>
 import request from './helpers/request'
 import auth from '@/api/auth'
+import blog from '@/api/blog'
+window.auth = auth
+window.blog = blog
 
 export default {
   name: 'App',
