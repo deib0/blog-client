@@ -6,4 +6,4 @@
 
 <script src="./template.js"></script>
 
-<style src="./template.css"></style>
+<style src="./template.less" scoped lang="less"></style>
