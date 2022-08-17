@@ -1,14 +1,30 @@
 <template>
   <div id="app">
-    <router-view/>
+    <el-button @click="login">登录</el-button>
+    <div>用户名: {{username}}</div>
   </div>
 </template>
 
 <script>
-
 import request from './helpers/request'
+import auth from '@/api/auth'
+
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      username: ''
+    }
+  },
+  methods: {
+    login() {
+      auth.login({ username: 'hunger', password: '123456' })
+        .then(res => {
+          console.log(res)
+          this.username = res.data.username
+        })
+    }
+  }
 }
 </script>
 
@@ -19,5 +35,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
