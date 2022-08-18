@@ -29,12 +29,14 @@ export default {
 #app{
   background: #ffffff;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   #main{
-    width: 100%;
+    width: 1264px;
+    flex-grow: 1;
     margin-top: 47px;
   }
 }
