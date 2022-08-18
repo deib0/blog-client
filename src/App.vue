@@ -35,6 +35,7 @@ export default {
   align-items: center;
   #main{
     width: 100%;
+    margin-top: 47px;
   }
 }
 </style>

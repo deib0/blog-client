@@ -8,6 +8,8 @@ import Login from '../pages/Login/template.vue'
 import My from '../pages/My/template.vue'
 import Register from '../pages/Register/template.vue'
 import User from '../pages/User/template.vue'
+import NotFound from '../pages/NotFound.vue'
+
 
 Vue.use(Router)
 
@@ -52,6 +54,11 @@ export default new Router({
       path: '/user',
       name: 'User',
       component: User
+    },
+    {
+      path: '/*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
