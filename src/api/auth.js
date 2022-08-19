@@ -27,8 +27,8 @@ export default {
 }
 
 // 测试代码
-auth.login({ username: 'hunger', password: '123456' })
-.then(res => {
-    console.log(res)
-    this.username = res.data.username
-})
+// auth.login({ username: 'hunger', password: '123456' })
+// .then(res => {
+//     console.log(res)
+//     this.username = res.data.username
+// })
