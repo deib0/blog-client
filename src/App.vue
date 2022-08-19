@@ -12,8 +12,8 @@
 
 <script>
 
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 export default {
   name: 'App',
@@ -25,19 +25,47 @@ export default {
 </script>
 
 <style lang="less">
-@import url(./assets/reset.less);
-#app{
-  background: #ffffff;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  #main{
-    width: 1264px;
-    flex-grow: 1;
-    margin-top: 47px;
+
+@import "./assets/common.less";
+
+#app {
+  display: grid;
+  grid-template-columns: 12% auto 12%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header"
+                       ".      main  ."
+                       "footer footer footer";
+
+  #header {
+    grid-area: header;
+    padding-left: 12%;
+    padding-right: 12%;
   }
+
+  #main {
+    grid-area: main;
+  }
+
+  #footer {
+    grid-area: footer;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
 }
+
+@media (max-width: 768px) {
+  #app {
+    grid-template-columns: 10px auto 10px;
+
+    #header, #footer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+}
+
+
+
 </style>
