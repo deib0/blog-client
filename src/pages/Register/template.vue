@@ -10,8 +10,8 @@
                 <el-input placeholder="请输入密码" v-model="password" show-password></el-input>
             </li>
         </ul>
-        <el-button class="register-btn" @click="onLogin">立即注册</el-button>
-        <p class="login">已有账号？<router-link class="signup-link" to="/login">登录</router-link></p>
+        <el-button class="register-btn" @click="onRegister">立即注册</el-button>
+        <p class="login">已有账号？<router-link class="login-link" to="/login">登录</router-link></p>
     </div>
 </template>
 
