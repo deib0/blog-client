@@ -7,7 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 import Util from '@/helpers/util'
-
+import './iconfont/iconfont'
 
 Vue.use(ElementUI)
 Vue.use(Util)

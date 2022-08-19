@@ -1,15 +1,22 @@
 <template>
   <header :class="{login: isLogin, 'no-login': !isLogin}">
     <template v-if="!isLogin">
-      <h1>Let's share</h1>
-      <p>精品博客汇聚</p>
+      <h1>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-stackoverflow"></use>
+      </svg>
+        stack <strong>overweight</strong></h1>
       <div class="btns">
         <router-link to="/login"><el-button >立即登录</el-button></router-link>
         <router-link to="/register"><el-button>注册账号</el-button></router-link>
       </div> 
     </template>
     <template v-if="isLogin">
-      <h1><router-link to="/">Let's share</router-link></h1>
+      <h1><router-link to="/">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-stackoverflow"></use>
+        </svg>
+        stack <strong>overweight</strong></router-link></h1>
       <router-link to="/create"><i class="edit el-icon-plus"></i></router-link>
       <div class="user">
         <img class="avatar" :src="user.avatar" :alt="user.username" :title="user.username">
@@ -66,20 +73,16 @@
 
 header.no-login {
   padding: 0 12% 30px 12%;
-  background: @bgColor;
+  background: #f8f9f9;
   display: grid;
   justify-items: center;
-
+  border-top: 3px solid #f48225;
+  box-shadow: 0 1px 2px hsla(0,0%,0%,0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05);
   h1 {
-    color: #fff;
+    color: #222426;
     font-size: 40px;
+    font-weight: normal;
     margin: 60px 0 0 0;
-    text-transform: uppercase;
-  }
-
-  p {
-    margin: 15px 0 0 0;
-    color: #fff;
   }
   
   .btns {
@@ -95,23 +98,25 @@ header.no-login {
 header.login {
   display: flex;
   align-items: center;
-  background: @bgColor;
-
+  background: #f8f9f9;
+  border-top: 3px solid #f48225;
+  box-shadow: 0 1px 2px hsla(0,0%,0%,0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05);
   h1 {
     margin: 0;
     padding: 0;
-    font-size: 40px;
-    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
     flex: 1;
 
     a {
-      color: #fff;
+      color: #222426;
     }
   }
 
   .edit {
-    color: #fff;
+    color: #f48225;
     font-size: 30px;
+    font-weight: 700;
   }
 
   .avatar {
