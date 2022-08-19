@@ -6,11 +6,11 @@
                     <use xlink:href="#icon-stackoverflow"></use>
                 </svg>
                 stack&nbsp;<strong>overweight</strong></router-link>
-                <div class="no-login">
+                <div class="no-login" v-if="!isLogin">
                     <div class="login"><el-button class="login-btn">Log in</el-button></div>
                     <div class="signup"><el-button class="signup-btn">Sign up</el-button></div>
                 </div>
-            <div class="login">
+            <div class="login" v-if="isLogin">
                 <div class="blog">
                     <el-button class="blog-btn">Write blog</el-button>
                 </div>
@@ -21,9 +21,39 @@
 </template>
 
 <script>
-export default {
-    name:'Header'
-}
+  import auth from '@/api/auth'
+  window.auth = auth
+
+  import { mapGetters, mapActions } from 'vuex'
+
+  export default {
+    data() {
+      return {}
+    },
+
+    computed: {
+      ...mapGetters([
+        'isLogin',
+        'user'
+        ])
+    },
+
+    created() {
+      this.checkLogin()
+    },
+
+    methods: {
+      ...mapActions([
+        'checkLogin',
+        'logout'
+        ]),
+
+      onLogout() {
+        this.logout()
+      }
+    }
+
+  }
 </script>
 
 <style lang="less" scoped>
