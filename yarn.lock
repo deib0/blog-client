@@ -4215,6 +4215,11 @@
   dependencies:
     "object-visit" "^1.0.0"
 
+"marked@^0.4.0":
+  "integrity" "sha512-tMsdNBgOsrUophCAFQl0XPe6Zqk/uy9gnue+jIIKhykO51hxyu6uNx7zBPy0+y/WKYVZZMspV9YeXLNdKk+iYw=="
+  "resolved" "https://registry.npmmirror.com/marked/-/marked-0.4.0.tgz"
+  "version" "0.4.0"
+
 "math-expression-evaluator@^1.2.14":
   "integrity" "sha512-4vRUvPyxdO8cWULGTh9dZWL2tZK6LDBvj+OGHBER7poH9Qdt7kXEoj20wiz4lQUbUXQZFjPbe5mVDo9nutizCw=="
   "resolved" "https://registry.npmmirror.com/math-expression-evaluator/-/math-expression-evaluator-1.4.0.tgz"
@@ -4490,6 +4495,11 @@
   "integrity" "sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA=="
   "resolved" "https://registry.npmmirror.com/node-forge/-/node-forge-0.10.0.tgz"
   "version" "0.10.0"
+
+"node-less@^1.0.0":
+  "integrity" "sha512-kRuQy6Gz6T7pV6f5x8H4B3bjJfUN+WaaQ/6NA27E/s0Ts76Q9ZHPLJiLFIwN2xV76dpTXs9P5xVk/5aBug0hrA=="
+  "resolved" "https://registry.npmmirror.com/node-less/-/node-less-1.0.0.tgz"
+  "version" "1.0.0"
 
 "node-libs-browser@^2.0.0":
   "integrity" "sha512-h/zcD8H9kaDZ9ALUWwlBUDo6TKF8a7qBSCSEGfjTVIYeqsioSKaAX+BN7NgiMGp6iSIXZ3PxgCu8KS3b71YK5Q=="
